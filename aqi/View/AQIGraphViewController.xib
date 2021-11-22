@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AQIGraphViewController" customModule="aqi" customModuleProvider="target">
+            <connections>
+                <outlet property="aQIValueLabel" destination="hCm-8K-ogy" id="Fnj-pd-cvh"/>
+                <outlet property="barChartView" destination="8gy-tx-gGz" id="mhE-vG-OVE"/>
+                <outlet property="barchartViewWidthConstraint" destination="rTr-at-0Sd" id="uhj-NS-SAT"/>
+                <outlet property="cityNameLabel" destination="rLs-4U-0i6" id="BM7-ob-nBC"/>
+                <outlet property="graphChoicesSegmentControl" destination="E9i-NP-gDZ" id="xcF-rm-ZSf"/>
+                <outlet property="scrollView" destination="UoV-Wc-kCN" id="iM9-WC-L9V"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ldI-HJ-Auv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-4U-0i6" userLabel="cityNamelabel">
+                    <rect key="frame" x="167.5" y="84" width="79.5" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCm-8K-ogy" userLabel="aQIValueLabel">
+                    <rect key="frame" x="183" y="150" width="48" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gi-BN-R2T" userLabel="descriptionLabel">
+                    <rect key="frame" x="207" y="194" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoV-Wc-kCN">
+                    <rect key="frame" x="20" y="351" width="374" height="511"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gy-tx-gGz" userLabel="barchartView" customClass="BarChartView" customModule="Charts">
+                            <rect key="frame" x="-6" y="-10" width="370" height="462"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="370" id="rTr-at-0Sd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="JiS-2Q-2to" firstAttribute="bottom" secondItem="8gy-tx-gGz" secondAttribute="bottom" constant="59" id="2Ng-gr-Jhj"/>
+                        <constraint firstItem="8gy-tx-gGz" firstAttribute="centerY" secondItem="NIH-Qb-ZVq" secondAttribute="centerY" id="GXY-mK-hkd"/>
+                        <constraint firstItem="JiS-2Q-2to" firstAttribute="trailing" secondItem="8gy-tx-gGz" secondAttribute="trailing" constant="10" id="QNg-6k-pLN"/>
+                        <constraint firstItem="8gy-tx-gGz" firstAttribute="centerX" secondItem="NIH-Qb-ZVq" secondAttribute="centerX" id="fRc-yY-Hni"/>
+                        <constraint firstItem="8gy-tx-gGz" firstAttribute="top" secondItem="UoV-Wc-kCN" secondAttribute="top" constant="-10" id="zve-nU-D6L"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="NIH-Qb-ZVq"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="JiS-2Q-2to"/>
+                </scrollView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="E9i-NP-gDZ" userLabel="graphChoicesSegmentControl">
+                    <rect key="frame" x="27.5" y="252.5" width="359" height="32"/>
+                    <segments>
+                        <segment title="Live"/>
+                        <segment title="Past 30 minutes"/>
+                        <segment title="Past 1 hour"/>
+                    </segments>
+                    <connections>
+                        <action selector="acSegmentAction:" destination="-1" eventType="valueChanged" id="MyR-C7-ENC"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UoV-Wc-kCN" firstAttribute="top" secondItem="rLs-4U-0i6" secondAttribute="bottom" constant="231" id="096-Pq-FNO"/>
+                <constraint firstItem="hCm-8K-ogy" firstAttribute="top" secondItem="rLs-4U-0i6" secondAttribute="bottom" constant="30" id="0x0-T5-Obn"/>
+                <constraint firstItem="E9i-NP-gDZ" firstAttribute="centerX" secondItem="1Gi-BN-R2T" secondAttribute="centerX" id="65U-Yb-HaF"/>
+                <constraint firstItem="1Gi-BN-R2T" firstAttribute="top" secondItem="hCm-8K-ogy" secondAttribute="bottom" constant="20" id="7Kh-CI-rP0"/>
+                <constraint firstItem="hCm-8K-ogy" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="F8M-ge-p5T"/>
+                <constraint firstItem="rLs-4U-0i6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="GZB-Gx-0Ap"/>
+                <constraint firstItem="E9i-NP-gDZ" firstAttribute="top" secondItem="1Gi-BN-R2T" secondAttribute="bottom" constant="58.5" id="OOP-uh-4IF"/>
+                <constraint firstItem="1Gi-BN-R2T" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="eXK-Ek-dFX"/>
+                <constraint firstItem="UoV-Wc-kCN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="fR6-FH-CkL"/>
+                <constraint firstItem="rLs-4U-0i6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="kTq-Fs-i1E"/>
+                <constraint firstItem="UoV-Wc-kCN" firstAttribute="centerX" secondItem="rLs-4U-0i6" secondAttribute="centerX" id="niQ-PR-TAS"/>
+                <constraint firstItem="UoV-Wc-kCN" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="zho-LF-swk"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="60.9375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

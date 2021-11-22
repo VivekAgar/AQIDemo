@@ -24,6 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window: UIWindow = UIWindow(windowScene: windowScene)
         window.rootViewController = initialViewController
         self.window = window
+        //create Sql lite DB
+        AQIDBHelper().createDB()
         window.makeKeyAndVisible()
         
     }

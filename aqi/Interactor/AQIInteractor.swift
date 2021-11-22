@@ -38,7 +38,7 @@ class AQIInteractor: AQIInteractorProtocol, WebSocketDelegate {
         case .text(let text):
           print("received text: \(text)")
             do {
-            let entities = try JSONDecoder().decode(AQIDataList.self, from: Data(text.utf8))
+            let entities = try JSONDecoder().decode([AQIData].self, from: Data(text.utf8))
             self.presenter?.interactorDidfetchedData(With: .success(entities))
             }
             catch{

@@ -25,6 +25,14 @@
 		E275B8EB27497538001581CD /* AQIpresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275B8EA27497538001581CD /* AQIpresenter.swift */; };
 		E275B8ED2749755F001581CD /* AQIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275B8EC2749755F001581CD /* AQIData.swift */; };
 		E275B8EF274A408F001581CD /* AQIDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275B8EE274A408F001581CD /* AQIDBHelper.swift */; };
+		E275B8F1274A9F4A001581CD /* AQITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E275B8F0274A9F4A001581CD /* AQITableViewCell.xib */; };
+		E275B8F3274A9F63001581CD /* AQITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275B8F2274A9F63001581CD /* AQITableViewCell.swift */; };
+		E275B8F5274AC427001581CD /* AQIGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275B8F4274AC427001581CD /* AQIGraphViewController.swift */; };
+		E275B8F7274AC57D001581CD /* AQIGraphViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E275B8F6274AC57D001581CD /* AQIGraphViewController.xib */; };
+		E275B8F9274B8B15001581CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275B8F8274B8B15001581CD /* CardView.swift */; };
+		E275B8FB274B9431001581CD /* AQIGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275B8FA274B9431001581CD /* AQIGradientView.swift */; };
+		E2C7DAB9274C2A0B006A1168 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7DAB8274C2A0B006A1168 /* Utility.swift */; };
+		E2C7DABB274C2C3C006A1168 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7DABA274C2C3C006A1168 /* constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +80,14 @@
 		E275B8EA27497538001581CD /* AQIpresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIpresenter.swift; sourceTree = "<group>"; };
 		E275B8EC2749755F001581CD /* AQIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIData.swift; sourceTree = "<group>"; };
 		E275B8EE274A408F001581CD /* AQIDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIDBHelper.swift; sourceTree = "<group>"; };
+		E275B8F0274A9F4A001581CD /* AQITableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AQITableViewCell.xib; sourceTree = "<group>"; };
+		E275B8F2274A9F63001581CD /* AQITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQITableViewCell.swift; sourceTree = "<group>"; };
+		E275B8F4274AC427001581CD /* AQIGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIGraphViewController.swift; sourceTree = "<group>"; };
+		E275B8F6274AC57D001581CD /* AQIGraphViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AQIGraphViewController.xib; sourceTree = "<group>"; };
+		E275B8F8274B8B15001581CD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E275B8FA274B9431001581CD /* AQIGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIGradientView.swift; sourceTree = "<group>"; };
+		E2C7DAB8274C2A0B006A1168 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		E2C7DABA274C2C3C006A1168 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		F0EBF8F58C74C84CAFE2F1EA /* Pods_aqi_aqiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aqi_aqiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +167,7 @@
 		E275B8B32749685B001581CD /* aqi */ = {
 			isa = PBXGroup;
 			children = (
+				E2C7DAB8274C2A0B006A1168 /* Utility.swift */,
 				E275B8B42749685B001581CD /* AppDelegate.swift */,
 				E275B8B62749685B001581CD /* SceneDelegate.swift */,
 				E275B8B82749685B001581CD /* ViewController.swift */,
@@ -158,12 +175,13 @@
 				E275B8BD2749685D001581CD /* Assets.xcassets */,
 				E275B8BF2749685D001581CD /* LaunchScreen.storyboard */,
 				E275B8C22749685D001581CD /* Info.plist */,
-				E275B8E4274974F8001581CD /* AQIRouter.swift */,
-				E275B8E62749750A001581CD /* AQIView.swift */,
-				E275B8E827497523001581CD /* AQIInteractor.swift */,
-				E275B8EA27497538001581CD /* AQIpresenter.swift */,
-				E275B8EC2749755F001581CD /* AQIData.swift */,
+				E2C7DAC0274C2F71006A1168 /* Router */,
+				E2C7DABC274C2F17006A1168 /* View */,
+				E2C7DABD274C2F39006A1168 /* Interactor */,
+				E2C7DABE274C2F51006A1168 /* Presenter */,
+				E2C7DABF274C2F61006A1168 /* Entity */,
 				E275B8EE274A408F001581CD /* AQIDBHelper.swift */,
+				E2C7DABA274C2C3C006A1168 /* constants.swift */,
 			);
 			path = aqi;
 			sourceTree = "<group>";
@@ -183,6 +201,52 @@
 				E275B8D72749685D001581CD /* aqiUITestsLaunchTests.swift */,
 			);
 			path = aqiUITests;
+			sourceTree = "<group>";
+		};
+		E2C7DABC274C2F17006A1168 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E275B8F2274A9F63001581CD /* AQITableViewCell.swift */,
+				E275B8E62749750A001581CD /* AQIView.swift */,
+				E275B8F4274AC427001581CD /* AQIGraphViewController.swift */,
+				E275B8F6274AC57D001581CD /* AQIGraphViewController.xib */,
+				E275B8F0274A9F4A001581CD /* AQITableViewCell.xib */,
+				E275B8F8274B8B15001581CD /* CardView.swift */,
+				E275B8FA274B9431001581CD /* AQIGradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2C7DABD274C2F39006A1168 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E275B8E827497523001581CD /* AQIInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E2C7DABE274C2F51006A1168 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E275B8EA27497538001581CD /* AQIpresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E2C7DABF274C2F61006A1168 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E275B8EC2749755F001581CD /* AQIData.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E2C7DAC0274C2F71006A1168 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E275B8E4274974F8001581CD /* AQIRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +361,8 @@
 				E275B8C12749685D001581CD /* LaunchScreen.storyboard in Resources */,
 				E275B8BE2749685D001581CD /* Assets.xcassets in Resources */,
 				E275B8BC2749685B001581CD /* Main.storyboard in Resources */,
+				E275B8F1274A9F4A001581CD /* AQITableViewCell.xib in Resources */,
+				E275B8F7274AC57D001581CD /* AQIGraphViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,14 +490,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C7DAB9274C2A0B006A1168 /* Utility.swift in Sources */,
 				E275B8ED2749755F001581CD /* AQIData.swift in Sources */,
 				E275B8E927497523001581CD /* AQIInteractor.swift in Sources */,
+				E275B8FB274B9431001581CD /* AQIGradientView.swift in Sources */,
 				E275B8B92749685B001581CD /* ViewController.swift in Sources */,
+				E275B8F3274A9F63001581CD /* AQITableViewCell.swift in Sources */,
 				E275B8B52749685B001581CD /* AppDelegate.swift in Sources */,
 				E275B8EF274A408F001581CD /* AQIDBHelper.swift in Sources */,
+				E2C7DABB274C2C3C006A1168 /* constants.swift in Sources */,
 				E275B8E72749750A001581CD /* AQIView.swift in Sources */,
 				E275B8E5274974F8001581CD /* AQIRouter.swift in Sources */,
+				E275B8F5274AC427001581CD /* AQIGraphViewController.swift in Sources */,
 				E275B8EB27497538001581CD /* AQIpresenter.swift in Sources */,
+				E275B8F9274B8B15001581CD /* CardView.swift in Sources */,
 				E275B8B72749685B001581CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

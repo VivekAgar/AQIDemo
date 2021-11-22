@@ -28,7 +28,7 @@ class AQIRouter: AQIRouterProtocol{
         let view: AQIView = AQIView()
         let interactor: AQIInteractor = AQIInteractor()
         let presenter: AQIPresenter = AQIPresenter()
-        
+        view.presenter = presenter
         interactor.presenter = presenter
         presenter.interactor = interactor
         presenter.view = view
