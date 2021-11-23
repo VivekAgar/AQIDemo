@@ -5,8 +5,8 @@ A demo project with VIPER architecture. All views, Interactors Presenter and rou
 Application connects to a web socket for latest AQI data.
 
  App provides live AQI data values for cities on listing and detail page.
- on detail page we can see historical data of last 30 minutes and last 1 hour (if data is available in local sqllite db )
- we need to allow app to run for some time so that app can store data to show historical data.
+ On detail page we can see historical data of last 30 minutes and last 1 hour (if data is available in local sqllite db ).
+ We need to allow app to run for some time so that app can store data to show historical data.
 
 
 
